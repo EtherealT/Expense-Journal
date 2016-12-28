@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <TabHost
+        android:id="@+id/editShoppingListTabHost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#CCCCCC">
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    >
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/listContentPanel"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="20dp"
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/incomeTableHeader"
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/back"
+                                android:weightSum="3"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="10dp"
+                                >
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:textSize="17sp"
+                                    android:layout_weight="2"
+                                    android:textAlignment="textStart"
+                                    android:layout_gravity="start"
+                                    android:text="@string/expenseTitleColumnTitle"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:textSize="17sp"
+                                    android:layout_weight="1"
+                                    android:textAlignment="textEnd"
+                                    android:layout_gravity="end"
+                                    android:text="@string/incomeAmountColumnTitle"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+
+
+
+</LinearLayout>

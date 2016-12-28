@@ -1,0 +1,191 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nectarmicrosystems.fundsmanager" android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="23"
+    />
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher" android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.LaunchActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.NewExpenseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/myDialog"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.NEWEXPENSEACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.NewSingleItemActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/myDialog"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.NEWSINGLEITEMACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.NewShoppingListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.NEWSHOPPINGLISTACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.NewIncomeItemActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/myDialog"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.NEWINCOMEITEMACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.SetShoppingListName"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/myDialog"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.SETSHOPPINGLISTNAME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.NewListItemActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/myDialog"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.NEWLISTITEMACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.SETTINGSACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.AddNewCurrency"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/myDialog"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.ADDNEWCURRENCY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.SingleItemDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/myDialog"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.SINGLEITEMDETAILSACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.ListItemDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/myDialog"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.LISTITEMDETAILSACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.IncomeItemDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/myDialog"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.INCOMEITEMDETAILSACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.EditItemActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/myDialog"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.EDITITEMACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.EditIncomeItemActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/myDialog"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.EDITINCOMEITEMACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nectarmicrosystems.fundsmanager.EditListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.EDITLISTACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

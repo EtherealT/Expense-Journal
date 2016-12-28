@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="@string/currencySettings">
+
+        <ListPreference
+            android:title="@string/defaultCurrencies"
+            android:key="@string/defaultCurrenciesKey"
+            android:summary="@string/defaultCurrenciesSummary"
+            android:entries="@array/currencies"
+            android:entryValues="@array/currencyValues"
+            android:defaultValue="@string/dollar"
+        />
+
+        <Preference
+            android:title="@string/addNewCurrency"
+            android:key="@string/customCurrencyKey"
+            android:summary="@string/customCurrency"
+            >
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.nectarmicrosystems.fundsmanager"
+                android:targetClass="com.nectarmicrosystems.fundsmanager.AddNewCurrency"
+                />
+        </Preference>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="About">
+
+        <Preference
+            android:title="@string/version"
+            android:summary="@string/versionValue"
+        />
+
+        <Preference
+            android:title="@string/developer"
+            android:summary="@string/nectarMicrosystems"
+            />
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

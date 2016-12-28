@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="currencies">
+        <item>British Pound</item>
+        <item>Euro</item>
+        <item>Ghana Cedi</item>
+        <item>Hungarian Forint</item>
+        <item>Nigerian Naira</item>
+        <item>Russian Ruble</item>
+        <item>Dollar</item>
+    </string-array>
+
+    <string-array name="currencyValues">
+        <item>£</item>
+        <item>€</item>
+        <item>₵</item>
+        <item>Ft</item>
+        <item>₦</item>
+        <item>₽</item>
+        <item>$</item>
+    </string-array>
+</resources>

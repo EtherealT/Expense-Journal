@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <TabHost
+        android:id="@+id/editSingleItemTabHost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ScrollView
+                    android:id="@+id/tab1"
+                    android:orientation="vertical"
+                    android:layout_width="300dp"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFFFF"
+                    android:padding="20dp"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/editSingleItemName"
+                            android:hint="@string/name"
+                            android:textColorHint="#CCCCCC"
+                            android:textColor="#000000"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="20dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/editSingleItemAmount"
+                            android:hint="@string/amount"
+                            android:textColorHint="#CCCCCC"
+                            android:inputType="numberDecimal"
+                            android:textColor="#000000"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="20dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/editSingleItemDescription"
+                            android:hint="@string/description"
+                            android:textColorHint="#CCCCCC"
+                            android:textColor="#000000"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="20dp"
+                            />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:ems="10"
+                            android:id="@+id/editSingleItemInputDate"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="@string/date"
+                            android:textColorHint="#CCCCCC"
+                            android:textColor="#000000"
+                            />
+
+                        <Button
+                            android:id="@+id/editSingleItemBtn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/back2"
+                            android:text="@string/save"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            />
+
+                    </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

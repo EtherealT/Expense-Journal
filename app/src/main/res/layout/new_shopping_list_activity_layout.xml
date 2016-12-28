@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TabHost
+        android:id="@+id/shoppingListTabHost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#CCCCCC">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/myFAB3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add"
+                        app:elevation="4dp"
+                        app:borderWidth="0dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:onClick="addNewItemToList"
+                        />
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:weightSum="100"
+                                android:background="@drawable/back">
+
+                                    <TextView
+                                        android:textSize="17sp"
+                                        android:textAlignment="textStart"
+                                        android:layout_gravity="start"
+                                        android:text="@string/expenseTitleColumnTitle"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="70"
+                                    />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:textSize="17sp"
+                                        android:layout_weight="30"
+                                        android:textAlignment="textEnd"
+                                        android:layout_gravity="end"
+                                        android:text="@string/expenseAmountColumnTitle"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/shopListDynamicHold"
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/addItemHint"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/back"
+                                    android:text="@string/addToList"
+                                    android:textSize="17sp"
+                                    android:textAlignment="center"
+                                    android:padding="15dp"
+                                />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/totalLine"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp"
+                                    android:weightSum="100"
+                                    android:background="@drawable/back3"
+                                    android:visibility="invisible">
+
+                                    <TextView
+                                        android:textSize="17sp"
+                                        android:textAlignment="textStart"
+                                        android:layout_gravity="start"
+                                        android:text="@string/total"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="70"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/totalAmount"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:textSize="17sp"
+                                        android:layout_weight="30"
+                                        android:textAlignment="textEnd"
+                                        android:layout_gravity="end"
+                                        android:text="@string/totalAmount"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        />
+
+                                </LinearLayout>
+
+                                <Button
+                                    android:id="@+id/saveListBtn"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/back2"
+                                    android:text="@string/saveList"
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+                                    android:layout_margin="10dp"
+                                    android:visibility="invisible"
+                                />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>

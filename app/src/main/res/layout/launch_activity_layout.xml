@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:background="#F5F5F5"
+                    >
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/myFAB1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add"
+                        app:elevation="4dp"
+                        app:borderWidth="0dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:onClick="fabClicked"
+                        />
+
+                    <ScrollView
+                        android:id="@+id/expensesScroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/dynamicHold"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/expensesTableHeader"
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/back"
+                                android:weightSum="3"
+                                android:padding="10dp"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:textSize="17sp"
+                                    android:layout_weight="1"
+                                    android:textAlignment="textStart"
+                                    android:layout_gravity="start"
+                                    android:text="@string/expenseDateColumnTitle"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:textSize="17sp"
+                                    android:layout_weight="1"
+                                    android:textAlignment="textStart"
+                                    android:layout_gravity="start"
+                                    android:text="@string/expenseTitleColumnTitle"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:textSize="17sp"
+                                    android:layout_weight="1"
+                                    android:textAlignment="textEnd"
+                                    android:layout_gravity="end"
+                                    android:text="@string/expenseAmountColumnTitle"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:background="#F5F5F5"
+                    >
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/myFAB2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add"
+                        app:elevation="4dp"
+                        app:borderWidth="0dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:onClick="fabClicked"
+                        />
+
+                    <ScrollView
+                        android:id="@+id/incomeScroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/incomeDynamicHold"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/incomeTableHeader"
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/back"
+                                android:weightSum="3"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="10dp"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:textSize="17sp"
+                                    android:layout_weight="1"
+                                    android:textAlignment="textStart"
+                                    android:layout_gravity="start"
+                                    android:text="@string/expenseDateColumnTitle"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:textSize="17sp"
+                                    android:layout_weight="1"
+                                    android:textAlignment="textStart"
+                                    android:layout_gravity="start"
+                                    android:text="@string/expenseTitleColumnTitle"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:textSize="17sp"
+                                    android:layout_weight="1"
+                                    android:textAlignment="textEnd"
+                                    android:layout_gravity="end"
+                                    android:text="@string/incomeAmountColumnTitle"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+                </RelativeLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+</LinearLayout>
